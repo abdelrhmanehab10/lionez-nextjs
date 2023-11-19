@@ -38,24 +38,18 @@ const DisplayCard: FC<DisplayCardProps> = ({ result }) => {
               "Tv Show"
             )}
           </div>
-          {result.stream_icon !== "" ? (
-            <Image
-              src={
-                result.cover ||
-                result.stream_icon ||
-                result.stream_type ||
-                "http:via.placeholder.com/640x360"
-              }
-              alt="film images"
-              width={1000}
-              height={1000}
-              className="w-full h-[400px] object-cover"
-            />
-          ) : (
-            <div className="w-full h-full bg-slate-500 text-white">
-              {result.stream_type}
-            </div>
-          )}
+          <Image
+            src={
+              result.cover ||
+              result.stream_icon ||
+              result.stream_type ||
+              "/logo.png"
+            }
+            alt="film images"
+            width={1000}
+            height={1000}
+            className="w-full h-[400px] object-cover"
+          />
         </div>
       </CardContent>
       <CardFooter className="flex-col">

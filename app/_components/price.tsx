@@ -85,20 +85,20 @@ const Price: FC<PriceProps> = ({}) => {
           <PriceCard
             title="اشتراك سنتين"
             currency={
-              isActive === "0"
+              isActive === "3"
                 ? "ريال سعودي"
-                : isActive === "1"
-                ? "جنيه مصري"
                 : isActive === "2"
+                ? "جنيه مصري"
+                : isActive === "1"
                 ? "درهم اماراتي"
                 : "دولار"
             }
             price={
-              isActive === "0"
+              isActive === "3"
                 ? "250"
-                : isActive === "1"
-                ? "500"
                 : isActive === "2"
+                ? "500"
+                : isActive === "1"
                 ? "250"
                 : "70"
             }
@@ -106,20 +106,20 @@ const Price: FC<PriceProps> = ({}) => {
           <PriceCard
             title="اشتراك سنوي"
             currency={
-              isActive === "0"
+              isActive === "3"
                 ? "ريال سعودي"
-                : isActive === "1"
-                ? "جنيه مصري"
                 : isActive === "2"
+                ? "جنيه مصري"
+                : isActive === "1"
                 ? "درهم اماراتي"
                 : "دولار"
             }
             price={
-              isActive === "0"
+              isActive === "3"
                 ? "150"
-                : isActive === "1"
-                ? "700"
                 : isActive === "2"
+                ? "700"
+                : isActive === "1"
                 ? "150"
                 : "40"
             }
@@ -127,20 +127,20 @@ const Price: FC<PriceProps> = ({}) => {
           <PriceCard
             title="اشتراك 6 شهور"
             currency={
-              isActive === "0"
+              isActive === "3"
                 ? "ريال سعودي"
-                : isActive === "1"
-                ? "جنيه مصري"
                 : isActive === "2"
+                ? "جنيه مصري"
+                : isActive === "1"
                 ? "درهم اماراتي"
                 : "دولار"
             }
             price={
-              isActive === "0"
+              isActive === "3"
                 ? "90"
-                : isActive === "1"
-                ? "400"
                 : isActive === "2"
+                ? "400"
+                : isActive === "1"
                 ? "150"
                 : "24"
             }
@@ -153,20 +153,20 @@ const Price: FC<PriceProps> = ({}) => {
           <PriceCard
             title="اشتراك سنوي"
             currency={
-              isActive === "0"
+              isActive === "3"
                 ? "ريال سعودي"
-                : isActive === "1"
-                ? "جنيه مصري"
                 : isActive === "2"
+                ? "جنيه مصري"
+                : isActive === "1"
                 ? "درهم اماراتي"
                 : "دولار"
             }
             price={
-              isActive === "0"
+              isActive === "3"
                 ? "100"
-                : isActive === "1"
-                ? "350"
                 : isActive === "2"
+                ? "350"
+                : isActive === "1"
                 ? "100"
                 : "25"
             }
@@ -174,20 +174,20 @@ const Price: FC<PriceProps> = ({}) => {
           <PriceCard
             title="اشتراك 3 شهور"
             currency={
-              isActive === "0"
+              isActive === "3"
                 ? "ريال سعودي"
-                : isActive === "1"
-                ? "جنيه مصري"
                 : isActive === "2"
+                ? "جنيه مصري"
+                : isActive === "1"
                 ? "درهم اماراتي"
                 : "دولار"
             }
             price={
-              isActive === "0"
+              isActive === "3"
                 ? "40"
-                : isActive === "1"
-                ? "150"
                 : isActive === "2"
+                ? "150"
+                : isActive === "1"
                 ? "60"
                 : "15"
             }
@@ -195,20 +195,20 @@ const Price: FC<PriceProps> = ({}) => {
           <PriceCard
             title="اشتراك 6 شهور"
             currency={
-              isActive === "0"
+              isActive === "3"
                 ? "ريال سعودي"
-                : isActive === "1"
-                ? "جنيه مصري"
                 : isActive === "2"
+                ? "جنيه مصري"
+                : isActive === "1"
                 ? "درهم اماراتي"
                 : "دولار"
             }
             price={
-              isActive === "0"
+              isActive === "3"
                 ? "60"
-                : isActive === "1"
-                ? "250"
                 : isActive === "2"
+                ? "250"
+                : isActive === "1"
                 ? "60"
                 : "20"
             }
