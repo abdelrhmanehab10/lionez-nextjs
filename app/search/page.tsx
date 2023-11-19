@@ -101,7 +101,7 @@ const SearchPage: FC<SearchPageProps> = ({}) => {
             ))}
           </div>
         ) : (
-          <div className="flex justify-center items-center mt-40">
+          <div className="flex justify-center items-center h-screen">
             {isLoading ? (
               <p className="animate-pl">
                 جاري البحث الان

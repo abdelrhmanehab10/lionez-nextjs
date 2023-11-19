@@ -21,7 +21,11 @@ interface PriceCardProps {
 
 const PriceCard: FC<PriceCardProps> = ({ currency, price, title }) => {
   return (
-    <motion.div initial={{ opacity: 0 }} whileInView={{ opacity: 1 }}>
+    <motion.div
+      initial={{ opacity: 0 }}
+      whileInView={{ opacity: 1 }}
+      viewport={{ once: true }}
+    >
       <Card
         className="hover:scale-105 transition my-10 rounded-none rounded-tl-3xl rounded-br-3xl rounded- w-2/3 mx-auto bg-gradient-to-l
         from-blue-950 to-main-blue/80
@@ -32,12 +36,14 @@ const PriceCard: FC<PriceCardProps> = ({ currency, price, title }) => {
           <motion.div
             initial={{ opacity: 0, translateY: "100px" }}
             whileInView={{ opacity: 1, translateY: 0 }}
+            viewport={{ once: true }}
           >
             <CardTitle className="text-center mb-4">{title}</CardTitle>
           </motion.div>
           <motion.div
             initial={{ opacity: 0 }}
             whileInView={{ opacity: 1 }}
+            viewport={{ once: true }}
             className="flex justify-end"
           >
             <CardDescription className="bg-main-orange -mr-6 text-white w-2/3 text-xl rounded-l-2xl px-4 py-6 flex flex-col">

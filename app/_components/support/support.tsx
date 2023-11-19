@@ -70,6 +70,7 @@ const Support: FC<SupportProps> = ({}) => {
           <motion.div
             initial={{ translateX: "-500px", opacity: 0 }}
             whileInView={{ translateX: 0, opacity: 1 }}
+            viewport={{ once: true }}
             transition={{ duration: 1.6 }}
             className="hidden md:block"
           >

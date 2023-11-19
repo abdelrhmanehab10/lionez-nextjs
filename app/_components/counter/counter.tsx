@@ -14,6 +14,7 @@ const Counter: FC<CounterProps> = ({ label, icon: Icon }) => {
     <motion.div
       initial={{ translateY: "300px", opacity: 0 }}
       whileInView={{ translateY: 0, opacity: 1 }}
+      viewport={{ once: true }}
       className="p-3 rounded-full border-4 border-white w-36 h-36 flex 
       flex-col justify-center items-center"
     >

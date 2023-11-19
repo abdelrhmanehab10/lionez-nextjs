@@ -14,7 +14,13 @@ const DisplayCard: FC<DisplayCardProps> = ({ result }) => {
           className="absolute bg-main-orange 
             left-0 top-0 p-[5px] rounded-br text-base"
         >
-          {result.stream_type ? result.stream_type : "Tv Show"}
+          <Image
+            src="/logo.png"
+            width={300}
+            height={300}
+            alt="سيرفر عرب ليونز"
+            className="w-10"
+          />
         </div>
         {result.stream_icon !== "" ? (
           <Image

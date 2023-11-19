@@ -26,7 +26,7 @@ const MCQ: FC<MCQProps> = ({}) => {
           <AccordionItem value="item-1">
             <AccordionTrigger
               className="bg-gradient-to-l
-        from-blue-950 to-main-blue/80 rounded-t px-3"
+             from-blue-950 to-main-blue/80 rounded-t px-3"
             >
               - هل يمكن تشغيل جهازين فى نفس الوقت ؟
             </AccordionTrigger>
@@ -122,6 +122,7 @@ const MCQ: FC<MCQProps> = ({}) => {
         <motion.div
           initial={{ opacity: 0, translateX: "-300px" }}
           whileInView={{ opacity: 1, translateX: 0 }}
+          viewport={{ once: true }}
           className="md:block hidden overflow-x-hidden"
         >
           <Image

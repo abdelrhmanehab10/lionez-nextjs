@@ -17,6 +17,7 @@ const Application: FC<ApplicationProps> = ({ isButton }) => {
       <motion.div
         initial={{ opacity: 0, translateY: "100px" }}
         whileInView={{ opacity: 1, translateY: 0 }}
+        viewport={{ once: true }}
         className="text-center"
       >
         <h2 className="text-3xl font-bold text-main-orange">تطبيقاتنا</h2>
@@ -34,6 +35,7 @@ const Application: FC<ApplicationProps> = ({ isButton }) => {
               className="ps-5 text-white/70 text-right text-sm"
               initial={{ opacity: 0, translateX: "100px" }}
               whileInView={{ opacity: 1, translateX: 0 }}
+              viewport={{ once: true }}
             >
               سيرفر عرب ليونز سيرفراتنا تدعم العمل على جميع الاجهزة
             </motion.p>
@@ -42,6 +44,7 @@ const Application: FC<ApplicationProps> = ({ isButton }) => {
                 className="md:ps-5 mt-5 flex items-center"
                 initial={{ opacity: 0, translateX: "100px" }}
                 whileInView={{ opacity: 1, translateX: 0 }}
+                viewport={{ once: true }}
               >
                 <span className="me-2">
                   <CheckCircle className="w-4 h-4 text-main-orange" />
@@ -52,6 +55,7 @@ const Application: FC<ApplicationProps> = ({ isButton }) => {
                 className="md:ps-5 mt-5 flex items-center"
                 initial={{ opacity: 0, translateX: "100px" }}
                 whileInView={{ opacity: 1, translateX: 0 }}
+                viewport={{ once: true }}
               >
                 <span className="me-2">
                   <CheckCircle className="w-4 h-4 text-main-orange" />
@@ -62,6 +66,7 @@ const Application: FC<ApplicationProps> = ({ isButton }) => {
                 className="md:ps-5 mt-5 flex items-center"
                 initial={{ opacity: 0, translateX: "100px" }}
                 whileInView={{ opacity: 1, translateX: 0 }}
+                viewport={{ once: true }}
               >
                 <span className="me-2">
                   <CheckCircle className="w-4 h-4 text-main-orange" />
@@ -72,6 +77,7 @@ const Application: FC<ApplicationProps> = ({ isButton }) => {
                 className="md:ps-5 mt-5 flex items-center"
                 initial={{ opacity: 0, translateX: "100px" }}
                 whileInView={{ opacity: 1, translateX: 0 }}
+                viewport={{ once: true }}
               >
                 <span className="me-2">
                   <CheckCircle className="w-4 h-4 text-main-orange" />
@@ -84,6 +90,7 @@ const Application: FC<ApplicationProps> = ({ isButton }) => {
                 className="mt-5 md:flex justify-start md:mr-5"
                 initial={{ opacity: 0, translateY: "100px" }}
                 whileInView={{ opacity: 1, translateY: 0 }}
+                viewport={{ once: true }}
               >
                 <Button className="bg-main-blue py-8 px-8">
                   <Link className="btn nav-page-downApp" href="app">
@@ -98,6 +105,7 @@ const Application: FC<ApplicationProps> = ({ isButton }) => {
           <motion.div
             initial={{ opacity: 0, translateX: "-300px" }}
             whileInView={{ opacity: 1, translateX: 0 }}
+            viewport={{ once: true }}
             className="md:block hidden overflow-x-hidden"
           >
             <Image

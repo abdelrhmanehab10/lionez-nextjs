@@ -14,6 +14,7 @@ const SupportLink: FC<SupportLinkProps> = ({ description, duration }) => {
       initial={{ translateX: "500px", opacity: 0 }}
       whileInView={{ translateX: 0, opacity: 1 }}
       transition={{ duration }}
+      viewport={{ once: true }}
       className="flex items-center justify-start my-3 gap-5"
     >
       <CheckCircle />
