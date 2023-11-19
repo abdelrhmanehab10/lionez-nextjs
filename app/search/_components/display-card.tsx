@@ -28,7 +28,7 @@ const DisplayCard: FC<DisplayCardProps> = ({ result }) => {
             alt="film images"
             width={1000}
             height={1000}
-            className="w-[230px] h-[300px] object-cover"
+            className="w-full h-[300px] object-cover"
           />
         </div>
       </CardContent>
