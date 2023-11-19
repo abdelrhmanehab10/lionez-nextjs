@@ -28,7 +28,7 @@ const PriceCard: FC<PriceCardProps> = ({ currency, price, title }) => {
     >
       <Card
         className="hover:scale-105 transition my-10 rounded-none rounded-tl-3xl rounded-br-3xl rounded- w-2/3 mx-auto bg-gradient-to-l
-        from-blue-950 to-main-blue/80
+        from-main-gradientLeft to-main-gradientRight
         border-t-0 border-l-0 border-r-main-orange
         border-b-main-orange text-white text-right"
       >

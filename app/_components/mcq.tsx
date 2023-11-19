@@ -26,7 +26,7 @@ const MCQ: FC<MCQProps> = ({}) => {
           <AccordionItem value="item-1">
             <AccordionTrigger
               className="bg-gradient-to-l
-             from-blue-950 to-main-blue/80 rounded-t px-3"
+             from-main-gradientLeft to-main-gradientRight rounded-t px-3"
             >
               - هل يمكن تشغيل جهازين فى نفس الوقت ؟
             </AccordionTrigger>
@@ -42,7 +42,7 @@ const MCQ: FC<MCQProps> = ({}) => {
           <AccordionItem value="item-2">
             <AccordionTrigger
               className="bg-gradient-to-l
-             from-blue-950 to-main-blue/80 px-3"
+             from-main-gradientLeft to-main-gradientRight px-3"
             >
               - ما هى سرعة النت المناسبة ؟
             </AccordionTrigger>
@@ -60,7 +60,7 @@ const MCQ: FC<MCQProps> = ({}) => {
           <AccordionItem value="item-3">
             <AccordionTrigger
               className="bg-gradient-to-l
-             from-blue-950 to-main-blue/80 px-3"
+             from-main-gradientLeft to-main-gradientRight px-3"
             >
               - مشكلة فى تسجيل الدخول للبرنامج ؟
             </AccordionTrigger>
@@ -77,7 +77,7 @@ const MCQ: FC<MCQProps> = ({}) => {
           <AccordionItem value="item-4">
             <AccordionTrigger
               className="bg-gradient-to-l
-             from-blue-950 to-main-blue/80 px-3"
+             from-main-gradientLeft to-main-gradientRight px-3"
             >
               - كيف يمكنني تشغيل سيرفر ليونز علي شاشة ذكية؟
             </AccordionTrigger>
@@ -97,7 +97,7 @@ const MCQ: FC<MCQProps> = ({}) => {
           <AccordionItem value="item-5">
             <AccordionTrigger
               className="bg-gradient-to-l
-             from-blue-950 to-main-blue/80 px-3"
+             from-main-gradientLeft to-main-gradientRight px-3"
             >
               - علي أي أجهزه يعمل إشتراك ليونز؟
             </AccordionTrigger>
@@ -109,7 +109,7 @@ const MCQ: FC<MCQProps> = ({}) => {
           <AccordionItem value="item-6">
             <AccordionTrigger
               className="bg-gradient-to-l
-             from-blue-950 to-main-blue/80 px-3"
+             from-main-gradientLeft to-main-gradientRight px-3"
             >
               - مشكله التقطيع
             </AccordionTrigger>

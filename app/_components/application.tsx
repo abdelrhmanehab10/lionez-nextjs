@@ -92,7 +92,10 @@ const Application: FC<ApplicationProps> = ({ isButton }) => {
                 whileInView={{ opacity: 1, translateY: 0 }}
                 viewport={{ once: true }}
               >
-                <Button className="bg-main-blue py-8 px-8">
+                <Button
+                  className="bg-gradient-to-l from-main-gradientLeft to-main-gradientRight 
+                  py-8 px-8 hover:bg-main-orange"
+                >
                   <Link className="btn nav-page-downApp" href="app">
                     تحميل التطبيق <Download className="mx-auto mt-2 w-4 h-4" />
                   </Link>

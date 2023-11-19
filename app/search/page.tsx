@@ -13,6 +13,7 @@ import { useDataStore } from "@/hooks/use-data-store";
 import { SearchItemType } from "@/types/types";
 import type { Metadata } from "next";
 import DisplayCard from "./_components/display-card";
+import { cn } from "@/lib/utils";
 
 interface SearchPageProps {}
 
@@ -20,6 +21,7 @@ const SearchPage: FC<SearchPageProps> = ({}) => {
   const [searchQuery, setSearchQuery] = useState<string>("");
   const [searchResult, setSearchResult] = useState<SearchItemType[]>([]);
   const [isLoading, setIsLoading] = useState<boolean>(false);
+  const [isActive, setIsActive] = useState<string>("");
   const debouncedQuery = useDebounce(searchQuery);
   const { data } = useDataStore();
 
@@ -46,12 +48,14 @@ const SearchPage: FC<SearchPageProps> = ({}) => {
   });
 
   const fetchFilms = () => {
+    setIsActive("films");
     setSearchResult([]);
     setIsLoading(true);
     setSearchResult(films as SearchItemType[]);
   };
 
   const fetchSeries = () => {
+    setIsActive("series");
     setSearchResult([]);
     setIsLoading(true);
     setSearchResult(series as SearchItemType[]);
@@ -59,6 +63,7 @@ const SearchPage: FC<SearchPageProps> = ({}) => {
 
   const onChange = (query: string) => {
     let filteredData;
+    setIsActive("");
     setSearchQuery(query);
     setIsLoading(true);
 
@@ -82,13 +87,23 @@ const SearchPage: FC<SearchPageProps> = ({}) => {
         <div className="flex justify-center items-center gap-10 mt-5">
           <Button
             onClick={fetchFilms}
-            className="bg-gradient-to-l from-main-background to-main-blue hover:bg-main-orange/70"
+            className={cn(
+              "hover:bg-main-orange/70",
+              isActive === "films"
+                ? "bg-main-orange"
+                : "bg-gradient-to-l from-main-gradientLeft to-main-gradientRight"
+            )}
           >
             احدث الافلام المضافه
           </Button>
           <Button
             onClick={fetchSeries}
-            className="bg-gradient-to-l from-main-background to-main-blue hover:bg-main-orange/70"
+            className={cn(
+              "hover:bg-main-orange/70",
+              isActive === "series"
+                ? "bg-main-orange"
+                : "bg-gradient-to-l from-main-gradientLeft to-main-gradientRight"
+            )}
           >
             احدث المسلسلات المضافه
           </Button>

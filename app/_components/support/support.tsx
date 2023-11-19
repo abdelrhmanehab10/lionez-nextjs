@@ -21,6 +21,7 @@ const Support: FC<SupportProps> = ({}) => {
               initial={{ translateX: "500px", opacity: 0 }}
               whileInView={{ translateX: 0, opacity: 1 }}
               transition={{ duration: 0.8 }}
+              className="text-main-orange text-right text-3xl pb-4"
             >
               مع سيرفر عرب ليونز استمتع باكبر باقة من القنوات العالمية والعربية
             </motion.h2>
