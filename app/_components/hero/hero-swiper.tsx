@@ -3,14 +3,14 @@ import Link from "next/link";
 
 import { motion } from "framer-motion";
 
-interface SwiperHeaderProps {
+interface HeroSwiperProps {
   background: string;
   title: string;
   titleFocus: string;
   description: string;
 }
 
-const SwiperHeader: FC<SwiperHeaderProps> = ({
+const HeroSwiper: FC<HeroSwiperProps> = ({
   background,
   title,
   titleFocus,
@@ -66,16 +66,9 @@ const SwiperHeader: FC<SwiperHeaderProps> = ({
             <span className="text-main-orange">{titleFocus}</span>
             {title}
           </h1>
-          <p
-            className="text-[20px] md:text-[25px]"
-        >
-            {description}
-          </p>
+          <p className="text-[20px] md:text-[25px]">{description}</p>
           <button className="text-white bg-main-blue my-5 transition shadow-[-5px_6px_9px_0px_#000000a3] font-bold hover:bg-main-orange px-2 py-1 ms-8 md:ms-0 rounded ">
-            <Link
-              href="https://qrco.de/lionztv"
-              target="_blank"
-            >
+            <Link href="https://qrco.de/lionztv" target="_blank">
               اشترك الأن
             </Link>
           </button>
@@ -85,4 +78,4 @@ const SwiperHeader: FC<SwiperHeaderProps> = ({
   );
 };
 
-export default SwiperHeader;
+export default HeroSwiper;

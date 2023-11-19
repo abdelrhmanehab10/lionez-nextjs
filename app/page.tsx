@@ -1,8 +1,8 @@
 "use client";
 
-import Channel from "@/app/_components/channel";
-import Header from "@/app/_components/header";
-import Support from "@/app/_components/support";
+import Channels from "@/app/_components/channels/channels";
+import Header from "@/app/_components/hero/hero";
+import Support from "@/app/_components/support/support";
 import Counter from "@/app/_components/counter";
 import Price from "@/app/_components/price";
 import Application from "@/app/_components/application";
@@ -14,6 +14,7 @@ import { useDataStore } from "@/hooks/use-data-store";
 
 export default function Home() {
   const { setData } = useDataStore();
+
   const getAllData = useQuery({
     queryKey: ["content"],
     queryFn: async () => {
@@ -28,7 +29,7 @@ export default function Home() {
   return (
     <>
       <Header />
-      <Channel />
+      <Channels />
       <Support />
       <Counter />
       <Price />
