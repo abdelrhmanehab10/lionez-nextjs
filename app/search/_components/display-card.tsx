@@ -33,7 +33,7 @@ const DisplayCard: FC<DisplayCardProps> = ({ result }) => {
         </div>
       </CardContent>
       <CardFooter className="flex-col">
-        <h5 className="text-lg mt-3 text-white">
+        <h5 className="text-lg font-semibold mt-3 text-white">
           {result.genre} {result.name}
         </h5>
         <h6 className="text-lg mt-3 text-main-orange">

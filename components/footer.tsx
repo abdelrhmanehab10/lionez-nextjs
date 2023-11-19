@@ -1,4 +1,5 @@
 import { Copyright } from "lucide-react";
+import Link from "next/link";
 import { FC } from "react";
 
 interface FooterProps {}
@@ -11,7 +12,24 @@ const Footer: FC<FooterProps> = ({}) => {
           جميع الحقوق المحفوظه لسيرفر عرب ليونز
           <Copyright className="w-3 h-3" />
         </p>
-        <p className="text-xs">coding by : Eslam El Masry, Abdelrhman Ehab</p>
+        <p className="text-xs">
+          coding by :
+          <Link
+            href={"https://www.linkedin.com/in/abdelrahman-ehab-87261a244/"}
+            target="_blank"
+            className="underline"
+          >
+            Abdelrhman Ehab
+          </Link>
+          ,
+          <Link
+            href={"https://www.linkedin.com/in/elmasry960/"}
+            target="_blank"
+            className="underline"
+          >
+            Eslam El Masry
+          </Link>
+        </p>
       </div>
     </div>
   );
