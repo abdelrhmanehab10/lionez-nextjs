@@ -63,11 +63,15 @@ const HeroSwiper: FC<HeroSwiperProps> = ({
             md:static
             "
         >
-          <h1 className="text-white font-bold text-[35px] md:text-[35px] drop-shadow-[-5px_6px_9px_#000000a3] cursor-default leading-[1.5]">
+          <h1
+            className="text-white font-bold drop-shadow-[-5px_6px_9px_#000000a3] 
+            text-2xl md:text-5xl 
+            cursor-default leading-[1.5]"
+          >
             <span className="text-main-orange">{titleFocus}</span>
             {title}
           </h1>
-          <p className="text-[20px] md:text-[25px]">{description}</p>
+          <p className="text-[20px] mt-5 md:text-[25px]">{description}</p>
           <button className="text-white bg-main-blue my-5 transition shadow-[-5px_6px_9px_0px_#000000a3] font-bold hover:bg-main-orange px-2 py-1 ms-8 md:ms-0 rounded ">
             <Link href="https://qrco.de/lionztv" target="_blank">
               اشترك الأن

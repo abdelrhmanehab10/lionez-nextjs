@@ -20,7 +20,7 @@ const Counters: FC<CountersProps> = ({}) => {
           height={300}
           alt="wave up"
         />
-        <div className="bg-main-background/50 text-center w-full h-full flex justify-around items-center ">
+        <div className="bg-main-background/70 text-center w-full h-full flex justify-center gap-10 md:gap-20 items-center ">
           <Counter label="قنوات" icon={Satellite} />
           <Counter label="افلام" icon={Film} />
           <Counter label="مسلسلات" icon={Tv} />

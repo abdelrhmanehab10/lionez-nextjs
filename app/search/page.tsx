@@ -25,41 +25,35 @@ const SearchPage: FC<SearchPageProps> = ({}) => {
   const debouncedQuery = useDebounce(searchQuery);
   const { data } = useDataStore();
 
-  const { data: films }: { data: SearchItemType[] | undefined } = useQuery({
+  const { refetch: refetchMovies } = useQuery({
     queryKey: ["films"],
     queryFn: async () => {
+      setSearchResult([]);
+      setIsLoading(true);
+      setIsActive("films");
       const { data }: { data: SearchItemType[] } = await axios.get(
         "https://www.mrmazika.com/m50.php"
       );
-
+      setSearchResult(data as SearchItemType[]);
       return data;
     },
   });
 
-  const { data: series }: { data: SearchItemType[] | undefined } = useQuery({
+  const { refetch: refetchSeries } = useQuery({
     queryKey: ["series"],
     queryFn: async () => {
+      setSearchResult([]);
+      setIsActive("series");
+      setIsLoading(true);
       const { data }: { data: SearchItemType[] } = await axios.get(
         "https://www.mrmazika.com/s50.php"
       );
 
+      setSearchResult(data as SearchItemType[]);
+
       return data;
     },
   });
-
-  const fetchFilms = () => {
-    setIsActive("films");
-    setSearchResult([]);
-    setIsLoading(true);
-    setSearchResult(films as SearchItemType[]);
-  };
-
-  const fetchSeries = () => {
-    setIsActive("series");
-    setSearchResult([]);
-    setIsLoading(true);
-    setSearchResult(series as SearchItemType[]);
-  };
 
   const onChange = (query: string) => {
     let filteredData;
@@ -86,7 +80,7 @@ const SearchPage: FC<SearchPageProps> = ({}) => {
         />
         <div className="flex justify-center items-center gap-10 mt-5">
           <Button
-            onClick={fetchFilms}
+            onClick={() => refetchMovies()}
             className={cn(
               "hover:bg-main-orange/70",
               isActive === "films"
@@ -97,7 +91,7 @@ const SearchPage: FC<SearchPageProps> = ({}) => {
             احدث الافلام المضافه
           </Button>
           <Button
-            onClick={fetchSeries}
+            onClick={() => refetchSeries()}
             className={cn(
               "hover:bg-main-orange/70",
               isActive === "series"

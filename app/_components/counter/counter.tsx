@@ -15,12 +15,15 @@ const Counter: FC<CounterProps> = ({ label, icon: Icon }) => {
       initial={{ translateY: "300px", opacity: 0 }}
       whileInView={{ translateY: 0, opacity: 1 }}
       viewport={{ once: true }}
-      className="p-3 rounded-full border-8 border-[hsla(0,0%,100%,.586)] w-36 h-36 flex 
-      flex-col justify-center items-center"
     >
-      <Icon className="mx-auto w-10 h-10" />
-      <h3 className="mt-2">{label}</h3>
-      <span>
+      <div
+        className="p-5 rounded-full border-8 border-[hsla(0,0%,100%,.586)] w-30 h-30 flex 
+        flex-col justify-center items-center"
+      >
+        <Icon className="mx-auto w-16 h-16" />
+      </div>
+      <h3 className="mt-2 text-2xl">{label}</h3>
+      <span className="text-main-orange text-lg">
         <CountUp enableScrollSpy start={0} end={9000} duration={3} delay={0} />+
       </span>
     </motion.div>
