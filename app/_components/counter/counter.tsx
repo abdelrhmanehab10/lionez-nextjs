@@ -15,7 +15,7 @@ const Counter: FC<CounterProps> = ({ label, icon: Icon }) => {
       initial={{ translateY: "300px", opacity: 0 }}
       whileInView={{ translateY: 0, opacity: 1 }}
       viewport={{ once: true }}
-      className="p-3 rounded-full border-4 border-white w-36 h-36 flex 
+      className="p-3 rounded-full border-8 border-[hsla(0,0%,100%,.586)] w-36 h-36 flex 
       flex-col justify-center items-center"
     >
       <Icon className="mx-auto w-10 h-10" />

@@ -17,4 +17,6 @@ export interface SearchItemType {
   plot: string;
   genre: string;
   cover: string;
+  live: string;
+  created_live: string;
 }

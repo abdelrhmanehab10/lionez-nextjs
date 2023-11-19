@@ -83,19 +83,6 @@ const Price: FC<PriceProps> = ({}) => {
           value="lionz-tv-vip"
         >
           <PriceCard
-            title="اشتراك سنوي"
-            currency={
-              isActive === "0"
-                ? "ريال سعودي"
-                : isActive === "1"
-                ? "جنيه مصري"
-                : isActive === "2"
-                ? "درهم اماراتي"
-                : "دولار"
-            }
-            price="150"
-          />
-          <PriceCard
             title="اشتراك سنتين"
             currency={
               isActive === "0"
@@ -106,7 +93,36 @@ const Price: FC<PriceProps> = ({}) => {
                 ? "درهم اماراتي"
                 : "دولار"
             }
-            price="250"
+            price={
+              isActive === "0"
+                ? "250"
+                : isActive === "1"
+                ? "500"
+                : isActive === "2"
+                ? "250"
+                : "70"
+            }
+          />
+          <PriceCard
+            title="اشتراك سنوي"
+            currency={
+              isActive === "0"
+                ? "ريال سعودي"
+                : isActive === "1"
+                ? "جنيه مصري"
+                : isActive === "2"
+                ? "درهم اماراتي"
+                : "دولار"
+            }
+            price={
+              isActive === "0"
+                ? "150"
+                : isActive === "1"
+                ? "700"
+                : isActive === "2"
+                ? "150"
+                : "40"
+            }
           />
           <PriceCard
             title="اشتراك 6 شهور"
@@ -119,7 +135,15 @@ const Price: FC<PriceProps> = ({}) => {
                 ? "درهم اماراتي"
                 : "دولار"
             }
-            price="90"
+            price={
+              isActive === "0"
+                ? "90"
+                : isActive === "1"
+                ? "400"
+                : isActive === "2"
+                ? "150"
+                : "24"
+            }
           />
         </TabsContent>
         <TabsContent
@@ -137,10 +161,18 @@ const Price: FC<PriceProps> = ({}) => {
                 ? "درهم اماراتي"
                 : "دولار"
             }
-            price="150"
+            price={
+              isActive === "0"
+                ? "100"
+                : isActive === "1"
+                ? "350"
+                : isActive === "2"
+                ? "100"
+                : "25"
+            }
           />
           <PriceCard
-            title="اشتراك سنتين"
+            title="اشتراك 3 شهور"
             currency={
               isActive === "0"
                 ? "ريال سعودي"
@@ -150,7 +182,15 @@ const Price: FC<PriceProps> = ({}) => {
                 ? "درهم اماراتي"
                 : "دولار"
             }
-            price="250"
+            price={
+              isActive === "0"
+                ? "40"
+                : isActive === "1"
+                ? "150"
+                : isActive === "2"
+                ? "60"
+                : "15"
+            }
           />
           <PriceCard
             title="اشتراك 6 شهور"
@@ -163,7 +203,15 @@ const Price: FC<PriceProps> = ({}) => {
                 ? "درهم اماراتي"
                 : "دولار"
             }
-            price="90"
+            price={
+              isActive === "0"
+                ? "60"
+                : isActive === "1"
+                ? "250"
+                : isActive === "2"
+                ? "60"
+                : "20"
+            }
           />
         </TabsContent>
       </Tabs>
