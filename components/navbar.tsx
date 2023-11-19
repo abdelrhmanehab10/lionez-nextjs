@@ -35,10 +35,9 @@ const Navbar: FC<NavbarProps> = ({}) => {
       }}
       whileInView={{ backgroundColor: "transparent" }}
       className="fixed text-main-orange h-24 top-0 right-0 left-0 z-40 
-      flex items-center justify-between 
       py-2 px-4 border-b border-main-orange"
     >
-      <div className="w-full p-3 flex justify-between items-center">
+      <div className="w-full p-3 flex justify-between items-center md:justify-center md:w-fit md:mx-auto">
         <Link href="/">
           <motion.div
             initial={{ translateX: "300px" }}
@@ -58,9 +57,10 @@ const Navbar: FC<NavbarProps> = ({}) => {
           initial={{ translateX: "-300px" }}
           animate={{ translateX: 0 }}
           transition={{ duration: 0.5 }}
+          className="md:hidden"
         >
           <DropdownMenu dir="rtl">
-            <DropdownMenuTrigger className="md:hidden">
+            <DropdownMenuTrigger>
               <Menu className="text-white w-6 h-6" />
             </DropdownMenuTrigger>
             <DropdownMenuContent className="mt-[34px] border-0 w-screen rounded-none bg-black/80 text-white">
@@ -81,7 +81,7 @@ const Navbar: FC<NavbarProps> = ({}) => {
             </DropdownMenuContent>
           </DropdownMenu>
         </motion.div>
-        <div className={"hidden w-full md:flex md:justify-end"}>
+        <div className={"hidden w-full md:flex"}>
           <Links />
         </div>
       </div>
