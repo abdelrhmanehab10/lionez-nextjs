@@ -3,8 +3,14 @@ import Application from "../_components/application";
 import { APPS_DOWNLOAD_LINKS } from "@/constant/apps-links";
 import Image from "next/image";
 import DownloadSection from "./_components/download-section";
+import type { Metadata } from "next";
 
 interface ApplicationPageProps {}
+
+export const metadata: Metadata = {
+  title: "تطبيقاتنا | سيرفر عرب ليونز",
+  description: `.يمكنك تحميل التطبيقات الخاصة بسيرفر عرب ليونز والاستمتاع بمزاية بلا حدود`,
+};
 
 const ApplicationPage: FC<ApplicationPageProps> = ({}) => {
   const [{ apk }, { ios }, { windows }] = APPS_DOWNLOAD_LINKS;

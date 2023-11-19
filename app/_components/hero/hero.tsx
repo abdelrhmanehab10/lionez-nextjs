@@ -24,7 +24,7 @@ const Hero: FC<HeroProps> = ({}) => {
       }}
       autoplay={{ delay: 8000 }}
       modules={[Autoplay, EffectFade, Navigation, Pagination]}
-      className="h-screen relative overflow-y-hidden"
+      className="h-screen relative overflow-y-hidden z-10"
     >
       <SwiperSlide>
         <HeroSwiper

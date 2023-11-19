@@ -1,5 +1,12 @@
 import { FC } from "react";
 
+import type { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "الاراء | سيرفر عرب ليونز",
+  description: `اراء العملاء  في سيرفر عرب ليونز`,
+};
+
 interface pageProps {}
 
 const page: FC<pageProps> = ({}) => {

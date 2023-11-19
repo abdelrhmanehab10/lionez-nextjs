@@ -16,7 +16,13 @@ const Channel: FC<ChannelProps> = ({ imageSrc }) => {
       whileInView={{ translateY: 0 }}
       transition={{ duration: 0.5 }}
     >
-      <Image width={300} height={300} alt="channel-logo" src={imageSrc} />
+      <Image
+        width={300}
+        height={300}
+        className="md:w-20"
+        alt="channel-logo"
+        src={imageSrc}
+      />
     </motion.div>
   );
 };

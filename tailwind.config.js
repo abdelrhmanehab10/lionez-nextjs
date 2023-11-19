@@ -21,6 +21,8 @@ module.exports = {
           blue: "#0bbde9",
           orange: "#fe6000",
           background: "#0e192f",
+          gradientRight: "#4b6cb7",
+          gradientLeft: "#182848",
         },
         border: "hsl(var(--border))",
         input: "hsl(var(--input))",

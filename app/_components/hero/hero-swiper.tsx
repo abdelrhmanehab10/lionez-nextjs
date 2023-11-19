@@ -39,7 +39,7 @@ const HeroSwiper: FC<HeroSwiperProps> = ({
         h-full 
         flex 
         items-center 
-        z-50
+        z-10
         before:content-['']
         before:absolute
         before:w-[150%]

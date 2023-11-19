@@ -3,7 +3,7 @@
 import Channels from "@/app/_components/channels/channels";
 import Header from "@/app/_components/hero/hero";
 import Support from "@/app/_components/support/support";
-import Counter from "@/app/_components/counter";
+import Counters from "@/app/_components/counter/counters";
 import Price from "@/app/_components/price";
 import Application from "@/app/_components/application";
 import MCQ from "@/app/_components/mcq";
@@ -31,7 +31,7 @@ export default function Home() {
       <Header />
       <Channels />
       <Support />
-      <Counter />
+      <Counters />
       <Price />
       <Application isButton />
       <MCQ />

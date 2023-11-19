@@ -29,7 +29,8 @@ const DownloadSection: FC<DownloadSectionProps> = ({ items, system }) => {
             key={idx}
             href={download.link}
             target={"_blank"}
-            className="text-lg font-semibold text-center bg-gradient-to-l from-main-background to-main-blue mt-3 w-1/3 mx-auto p-1 rounded"
+            className="text-lg font-semibold text-center bg-gradient-to-l 
+            from-main-gradientRight to-main-gradientLeft mt-3 w-1/3 mx-auto p-1 rounded"
           >
             {download.title}
             <Download className="mx-auto" />
