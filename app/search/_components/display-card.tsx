@@ -18,8 +18,6 @@ const DisplayCard: FC<DisplayCardProps> = ({ result }) => {
       : result.cover || result.stream_icon || result.stream_type;
   };
 
-  console.log(returnedImage());
-
   return (
     <Card className="bg-transparent border-transparent">
       <CardContent>

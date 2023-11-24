@@ -1,5 +1,4 @@
 import { Dispatch, FC, SetStateAction, useState } from "react";
-import { useDebounce } from "@/hooks/use-debounce";
 import { SearchErrorType, SearchItemType } from "@/types";
 
 import { Input } from "@/components/ui/input";
@@ -20,7 +19,6 @@ const InputSearch: FC<InputSearchProps> = ({
   setSearchError,
 }) => {
   const [searchQuery, setSearchQuery] = useState<string>("");
-  const debouncedQuery = useDebounce(searchQuery);
 
   const { data, isLoading: allDataIsLoading } = useQuery({
     queryKey: ["content"],
@@ -34,6 +32,7 @@ const InputSearch: FC<InputSearchProps> = ({
 
   const onChange = (query: string) => {
     setIsActive("");
+
     if (allDataIsLoading) {
       setSearchError({
         message: "نحن ما ذلنا نحاول الوصول للبيانات. انتظر اقل من ثواني",
@@ -46,7 +45,7 @@ const InputSearch: FC<InputSearchProps> = ({
     setSearchQuery(query);
 
     const filteredData = data?.filter((item: SearchItemType) =>
-      item.name.toLowerCase().includes(debouncedQuery.toLowerCase())
+      item.name.toLowerCase().includes(searchQuery.toLowerCase())
     );
 
     if (filteredData?.length === 0) {
