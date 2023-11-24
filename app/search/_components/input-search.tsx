@@ -1,4 +1,4 @@
-import { Dispatch, FC, SetStateAction, useState } from "react";
+import { ChangeEvent, Dispatch, FC, SetStateAction, useState } from "react";
 import { SearchErrorType, SearchItemType } from "@/types";
 
 import { Input } from "@/components/ui/input";
@@ -30,7 +30,9 @@ const InputSearch: FC<InputSearchProps> = ({
     },
   });
 
-  const onChange = (query: string) => {
+  const onChange = (e: ChangeEvent<HTMLInputElement>) => {
+    console.log();
+
     setIsActive("");
 
     if (allDataIsLoading) {
@@ -42,10 +44,10 @@ const InputSearch: FC<InputSearchProps> = ({
       setSearchError(null);
     }
     setIsLoading(true);
-    setSearchQuery(query);
+    setSearchQuery(e.currentTarget.value);
 
     const filteredData = data?.filter((item: SearchItemType) =>
-      item.name.toLowerCase().includes(searchQuery.toLowerCase())
+      item.name.toLowerCase().includes(e.currentTarget.value.toLowerCase())
     );
 
     if (filteredData?.length === 0) {
@@ -54,8 +56,9 @@ const InputSearch: FC<InputSearchProps> = ({
     } else {
       setSearchError(null);
     }
+    const returnedData = filteredData?.slice(0, 50) as SearchItemType[];
 
-    setSearchResult(filteredData?.slice(0, 50) as SearchItemType[]);
+    setSearchResult(returnedData);
   };
 
   return (
@@ -64,7 +67,7 @@ const InputSearch: FC<InputSearchProps> = ({
       type="text"
       placeholder="ابحث باسم المحتوي فقط بدون كتابة فيلم او مسلسل"
       value={searchQuery}
-      onChange={(e) => onChange(e.target.value)}
+      onChange={onChange}
     />
   );
 };
