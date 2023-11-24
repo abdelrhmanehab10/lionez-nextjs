@@ -8,6 +8,18 @@ interface DisplayCardProps {
 }
 
 const DisplayCard: FC<DisplayCardProps> = ({ result }) => {
+  const returnedImage = () => {
+    return result.stream_type === "live" ||
+      result.stream_type === "created_live" ||
+      result.cover === "" ||
+      result.stream_icon === "" ||
+      result.stream_type === ""
+      ? "/logo.png"
+      : result.cover || result.stream_icon || result.stream_type;
+  };
+
+  console.log(returnedImage());
+
   return (
     <Card className="bg-transparent border-transparent">
       <CardContent>
@@ -19,12 +31,7 @@ const DisplayCard: FC<DisplayCardProps> = ({ result }) => {
             {result.stream_type ?? "TV Show"}
           </div>
           <Image
-            src={`/${
-              result.stream_type === "live" ||
-              result.stream_type === "created_live"
-                ? "logo.png"
-                : result.cover || result.stream_icon || result.stream_type
-            }`}
+            src={returnedImage()}
             alt="film images"
             width={1000}
             height={1000}
