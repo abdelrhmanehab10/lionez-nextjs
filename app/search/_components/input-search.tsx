@@ -31,7 +31,7 @@ const InputSearch: FC<InputSearchProps> = ({
   });
 
   const onChange = (e: ChangeEvent<HTMLInputElement>) => {
-    console.log();
+    const query = e.currentTarget.value;
 
     setIsActive("");
 
@@ -44,10 +44,10 @@ const InputSearch: FC<InputSearchProps> = ({
       setSearchError(null);
     }
     setIsLoading(true);
-    setSearchQuery(e.currentTarget.value);
+    setSearchQuery(query);
 
     const filteredData = data?.filter((item: SearchItemType) =>
-      item.name.toLowerCase().includes(e.currentTarget.value.toLowerCase())
+      item.name.toLowerCase().includes(query.toLowerCase())
     );
 
     if (filteredData?.length === 0) {
