@@ -1,6 +1,9 @@
+"use client";
+
 import { FC } from "react";
 
 import Channel from "./channel";
+import { CHANNEL_IMAGE } from "@/constant";
 
 interface ChannelsProps {}
 
@@ -13,10 +16,9 @@ const Channels: FC<ChannelsProps> = ({}) => {
         flex justify-center items-center gap-5 md:w-1/2"
         style={{ backgroundImage: `url('/footer-dec.png')` }}
       >
-        <Channel imageSrc="/channels/bein.png" />
-        <Channel imageSrc="/channels/ad.gif" />
-        <Channel imageSrc="/channels/ssc.png" />
-        <Channel imageSrc="/channels/osn.png" />
+        {CHANNEL_IMAGE.map((img, i) => (
+          <Channel key={i} imageSrc={`/channels/${img}`} />
+        ))}
       </div>
     </div>
   );

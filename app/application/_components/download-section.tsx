@@ -2,6 +2,7 @@ import Link from "next/link";
 import { FC } from "react";
 
 import { Download } from "lucide-react";
+import { APPS_DOWNLOAD_LINKS } from "@/constant";
 
 interface ItemType {
   link: string;
@@ -10,7 +11,7 @@ interface ItemType {
 }
 
 interface DownloadSectionProps {
-  items: ItemType[];
+  items: (typeof APPS_DOWNLOAD_LINKS)[number];
   system: string;
 }
 

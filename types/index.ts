@@ -20,3 +20,8 @@ export interface SearchItemType {
   live: string;
   created_live: string;
 }
+
+export type SearchErrorType = {
+  message: string;
+  loader: boolean;
+} | null;

@@ -1,9 +1,8 @@
 import { FC } from "react";
 import Link from "next/link";
 import { cn } from "@/lib/utils";
-import { X } from "lucide-react";
-import { routes } from "@/constant/routes";
 import { usePathname } from "next/navigation";
+import { routes } from "@/constant";
 
 interface LinksProps {}
 

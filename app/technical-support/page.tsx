@@ -1,5 +1,5 @@
 import { FC } from "react";
-import MCQ from "../_components/mcq";
+import MCQ from "../_components/mcq/mcq";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {

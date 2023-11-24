@@ -15,8 +15,8 @@ import {
   DropdownMenuItem,
   DropdownMenuTrigger,
 } from "@/components/ui/dropdown-menu";
-import { routes } from "@/constant/routes";
 import { usePathname } from "next/navigation";
+import { routes } from "@/constant";
 
 interface NavbarProps {}
 
@@ -69,7 +69,7 @@ const Navbar: FC<NavbarProps> = ({}) => {
                   asChild
                   key={idx}
                   className={cn(
-                    "py-3",
+                    "py-3 cursor-pointer",
                     pathname === route.href
                       ? "mr-5 border-b border-main-orange text-main-orange font-extrabold rounded-none"
                       : ""

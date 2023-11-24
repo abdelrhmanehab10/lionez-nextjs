@@ -1,8 +1,10 @@
-import Image from "next/image";
-import { FC } from "react";
+"use client";
 
-import { Film, Satellite, Tv } from "lucide-react";
+import { FC } from "react";
+import Image from "next/image";
+
 import Counter from "./counter";
+import { COUNTERS } from "@/constant";
 
 interface CountersProps {}
 
@@ -20,10 +22,13 @@ const Counters: FC<CountersProps> = ({}) => {
           height={300}
           alt="wave up"
         />
-        <div className="bg-main-background/70 text-center w-full h-full flex justify-center gap-10 md:gap-20 items-center ">
-          <Counter label="قنوات" icon={Satellite} />
-          <Counter label="افلام" icon={Film} />
-          <Counter label="مسلسلات" icon={Tv} />
+        <div
+          className="bg-main-background/70 text-center w-full 
+          h-full flex justify-center gap-10 md:gap-20 items-center"
+        >
+          {COUNTERS.map((counter, i) => (
+            <Counter key={i} label={counter.label} icon={counter.icon} />
+          ))}
         </div>
       </div>
       <Image

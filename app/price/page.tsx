@@ -1,5 +1,5 @@
 import { FC } from "react";
-import Price from "../_components/price";
+import Price from "../_components/price/price";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {

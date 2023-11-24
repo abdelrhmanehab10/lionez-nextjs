@@ -9,9 +9,9 @@ import {
 } from "@/components/ui/card";
 import Link from "next/link";
 import { Button } from "@/components/ui/button";
-import { features } from "@/constant/card-features";
 import { Check } from "lucide-react";
 import { motion } from "framer-motion";
+import { FEATURES } from "@/constant";
 
 interface PriceCardProps {
   title: string;
@@ -54,7 +54,7 @@ const PriceCard: FC<PriceCardProps> = ({ currency, price, title }) => {
         </CardHeader>
         <CardContent>
           <ul>
-            {features.map((feature, index) => (
+            {FEATURES.map((feature, index) => (
               <li
                 className="flex gap-4 items-center flex-row-reverse my-3"
                 key={index}

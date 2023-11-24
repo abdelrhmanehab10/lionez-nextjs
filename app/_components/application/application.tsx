@@ -1,11 +1,14 @@
 "use client";
+
 import { FC } from "react";
 import Link from "next/link";
 
-import { CheckCircle, Download } from "lucide-react";
+import { Download } from "lucide-react";
 import { motion } from "framer-motion";
 import { Button } from "@/components/ui/button";
 import Image from "next/image";
+import ApplicationLink from "./application-link";
+import { APPLICATION_LINKS } from "@/constant";
 
 interface ApplicationProps {
   isButton?: boolean;
@@ -40,50 +43,9 @@ const Application: FC<ApplicationProps> = ({ isButton }) => {
               سيرفر عرب ليونز سيرفراتنا تدعم العمل على جميع الاجهزة
             </motion.p>
             <ul className="md:ps-5 mb-3">
-              <motion.li
-                className="md:ps-5 mt-5 flex items-center"
-                initial={{ opacity: 0, translateX: "100px" }}
-                whileInView={{ opacity: 1, translateX: 0 }}
-                viewport={{ once: true }}
-              >
-                <span className="me-2">
-                  <CheckCircle className="w-4 h-4 text-main-orange" />
-                </span>
-                السيرفر يدعم الهواتف والاجهزة الاندرويد
-              </motion.li>
-              <motion.li
-                className="md:ps-5 mt-5 flex items-center"
-                initial={{ opacity: 0, translateX: "100px" }}
-                whileInView={{ opacity: 1, translateX: 0 }}
-                viewport={{ once: true }}
-              >
-                <span className="me-2">
-                  <CheckCircle className="w-4 h-4 text-main-orange" />
-                </span>
-                السيرفر يدعم الهواتف والاجهزة الـApple
-              </motion.li>
-              <motion.li
-                className="md:ps-5 mt-5 flex items-center"
-                initial={{ opacity: 0, translateX: "100px" }}
-                whileInView={{ opacity: 1, translateX: 0 }}
-                viewport={{ once: true }}
-              >
-                <span className="me-2">
-                  <CheckCircle className="w-4 h-4 text-main-orange" />
-                </span>
-                السيرفر يدعم الاجهزة بنظام ويندوز
-              </motion.li>
-              <motion.li
-                className="md:ps-5 mt-5 flex items-center"
-                initial={{ opacity: 0, translateX: "100px" }}
-                whileInView={{ opacity: 1, translateX: 0 }}
-                viewport={{ once: true }}
-              >
-                <span className="me-2">
-                  <CheckCircle className="w-4 h-4 text-main-orange" />
-                </span>
-                السيرفر يدعم جميع الشاشات الذكيه
-              </motion.li>
+              {APPLICATION_LINKS.map((link, i) => (
+                <ApplicationLink key={i} description={link} />
+              ))}
             </ul>
             {isButton ? (
               <motion.div

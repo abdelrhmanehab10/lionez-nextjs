@@ -4,6 +4,7 @@ import "./globals.css";
 import Navbar from "@/components/navbar";
 import Footer from "@/components/footer";
 import TanstackProvider from "@/components/providers/tanstack-provider";
+import ModalProvider from "@/components/providers/modal-provider";
 
 const font = Almarai({
   subsets: ["arabic"],
@@ -29,6 +30,7 @@ export default function RootLayout({
     <html lang="ar" dir="rtl">
       <body className={font.className}>
         <TanstackProvider>
+          <ModalProvider />
           <Navbar />
           {children}
           <Footer />
