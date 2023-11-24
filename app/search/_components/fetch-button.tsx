@@ -14,8 +14,8 @@ interface FetchButtonProps {
   isActive: string;
 }
 
-const MOVIES_URL = process.env.NEXT_PUBLIC_URL_TO_GET_MOVIES as string;
-const SERIES_URL = process.env.NEXT_PUBLIC_URL_TO_GET_SERIES as string;
+const MOVIES_URL = "https://www.mrmazika.com/m50.php";
+const SERIES_URL = "https://www.mrmazika.com/s50.php";
 
 const FetchButton: FC<FetchButtonProps> = ({
   title,
@@ -36,6 +36,8 @@ const FetchButton: FC<FetchButtonProps> = ({
 
       const { data }: { data: SearchItemType[] } = await axios.get(URL);
 
+      setIsLoading(false);
+      setSearchError(null);
       setSearchResult(data as SearchItemType[]);
 
       return data;

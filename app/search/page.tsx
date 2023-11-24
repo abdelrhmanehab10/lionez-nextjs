@@ -49,13 +49,14 @@ const SearchPage: FC<SearchPageProps> = ({}) => {
           </div>
         ) : (
           <div className="flex flex-col justify-center items-center h-screen">
-            {searchError ? (
+            {isLoading ? (
               <p className="animate-pluse">
-                {isLoading ? "جاري البحث الأن" : searchError.message}
-                {searchError?.loader ? (
-                  <Loader className="text-main-orange animate-spin mt-2 mx-auto" />
-                ) : null}
+                جاري البحث الأن
+                <Loader className="text-main-orange animate-spin mt-2 mx-auto" />
               </p>
+            ) : null}
+            {!isLoading && searchError ? (
+              <p className="animate-pluse">{searchError.message}</p>
             ) : null}
             {!isLoading && !searchError ? (
               <p>

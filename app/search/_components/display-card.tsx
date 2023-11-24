@@ -19,12 +19,12 @@ const DisplayCard: FC<DisplayCardProps> = ({ result }) => {
             {result.stream_type ?? "TV Show"}
           </div>
           <Image
-            src={
+            src={`/${
               result.stream_type === "live" ||
               result.stream_type === "created_live"
-                ? "/logo.png"
+                ? "logo.png"
                 : result.cover || result.stream_icon || result.stream_type
-            }
+            }`}
             alt="film images"
             width={1000}
             height={1000}

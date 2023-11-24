@@ -39,6 +39,8 @@ const InputSearch: FC<InputSearchProps> = ({
         message: "نحن ما ذلنا نحاول الوصول للبيانات. انتظر اقل من ثواني",
         loader: true,
       });
+    } else {
+      setSearchError(null);
     }
     setIsLoading(true);
     setSearchQuery(query);
@@ -50,6 +52,8 @@ const InputSearch: FC<InputSearchProps> = ({
     if (filteredData?.length === 0) {
       setIsLoading(false);
       setSearchError({ message: "لا توجد نتائج بحث", loader: false });
+    } else {
+      setSearchError(null);
     }
 
     setSearchResult(filteredData?.slice(0, 50) as SearchItemType[]);
