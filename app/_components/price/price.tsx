@@ -32,7 +32,7 @@ const Price: FC<PriceProps> = ({}) => {
         </TabsList>
         <div className="mt-5">
           <h2>اطلب الاشتراك الان</h2>
-          <ul className="mt-5 flex items-center justify-center gap-8">
+          <ul className="mt-5 grid w-1/2 mx-auto grid-rows-2 grid-cols-2 md:grid-rows-1 md:grid-cols-4 justify-center gap-8">
             {PRICE_BUTTONS.map((btn, i) => (
               <PriceButton
                 key={i}

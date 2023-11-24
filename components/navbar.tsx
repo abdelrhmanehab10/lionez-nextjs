@@ -38,7 +38,7 @@ const Navbar: FC<NavbarProps> = ({}) => {
       py-2 px-4 border-b border-main-orange"
     >
       <div className="w-full p-3 flex justify-between items-center md:justify-center md:w-fit md:mx-auto">
-        <Link href="/">
+        <Link href="/" className="mb-3">
           <motion.div
             initial={{ translateX: "300px" }}
             animate={{ translateX: 0 }}
@@ -49,7 +49,7 @@ const Navbar: FC<NavbarProps> = ({}) => {
               width={300}
               height={300}
               alt="سيرفر عرب ليونز"
-              className="w-20"
+              className="w-16 md:w-20"
             />
           </motion.div>
         </Link>

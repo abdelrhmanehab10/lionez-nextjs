@@ -14,7 +14,7 @@ const Links: FC<LinksProps> = ({}) => {
         <li
           key={idx}
           className={cn(
-            "text-gray-200 pb-2 hover:text-gray-500 px-3",
+            "text-gray-200 pb-2 hover:text-gray-500 px-3 text-xl",
             pathname === route.href
               ? "mr-5 border-b border-main-orange text-main-orange font-extrabold rounded-none"
               : ""

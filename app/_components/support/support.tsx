@@ -21,6 +21,7 @@ const Support: FC<SupportProps> = ({}) => {
               initial={{ translateX: "500px", opacity: 0 }}
               whileInView={{ translateX: 0, opacity: 1 }}
               transition={{ duration: 0.8 }}
+              viewport={{ once: true }}
               className="text-main-orange text-right text-3xl pb-4"
             >
               مع سيرفر عرب ليونز استمتع باكبر باقة من القنوات العالمية والعربية
@@ -29,6 +30,7 @@ const Support: FC<SupportProps> = ({}) => {
               initial={{ translateX: "500px", opacity: 0 }}
               whileInView={{ translateX: 0, opacity: 1 }}
               transition={{ duration: 1.6 }}
+              viewport={{ once: true }}
               className="leading-[1.9] text-[17px] mt-2"
             >
               نحن نقدم خدمة البث التلفزيوني المباشر على جميع الأقمار و من كل
