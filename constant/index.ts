@@ -1,9 +1,10 @@
 import { Film, Satellite, Tv } from "lucide-react";
+import "../components/navbar.css"
 
 export const routes = [
   {
     href: "/",
-    label: "الرئيسيه",
+    label: "الرئيسية",
   },
   {
     href: "/price",

@@ -33,6 +33,7 @@ const HeroSwiper: FC<HeroSwiperProps> = ({
     >
       <div
         className="
+        lionz-swiper
         ps-[10px]
         md:ps-[70px]
         relative 

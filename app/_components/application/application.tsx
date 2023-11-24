@@ -31,7 +31,7 @@ const Application: FC<ApplicationProps> = ({ isButton }) => {
       <div className="container pt-5">
         <div className="grid grid-cols-1 md:grid-cols-2">
           <div className="text-center pt-lg-5 support-text">
-            <h2 className="ps-3 text-xl text-right w-1/2 text-main-orange">
+            <h2 className="ps-3 app-title text-xl text-right text-main-orange">
               مع سيرفر عرب ليونز استمتع باكبر باقة من القنوات العالمية والعربية
             </h2>
             <motion.p

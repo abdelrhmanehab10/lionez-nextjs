@@ -89,9 +89,9 @@ const MCQ: FC<MCQProps> = ({}) => {
       <h2 className="text-3xl font-bold text-main-orange">
         الأسئلة الشائعة حول سيرفر عرب ليونز
       </h2>
-      <p className="text-white/50 text-sm">
+      <h3 className="text-white/50 text-sm">
         في حال وجود استفسار يتعلق بالخدمه او الاشتراك لا تتردد في الاتصال بنا
-      </p>
+      </h3>
       <div className="py-5 grid grid-cols-1 md:grid-cols-2 items-center">
         <Accordion className="w-2/3 mx-auto " type="single" collapsible>
           {ACCORDION_ITEMS.map((accordion, i) => (
