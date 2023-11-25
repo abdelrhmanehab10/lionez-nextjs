@@ -7,6 +7,7 @@ import { cn } from "@/lib/utils";
 
 import Links from "./links";
 
+
 import { Menu } from "lucide-react";
 import { motion, useScroll, useTransform } from "framer-motion";
 import {
@@ -37,7 +38,7 @@ const Navbar: FC<NavbarProps> = ({}) => {
       className="fixed text-main-orange h-24 top-0 right-0 left-0 z-40 
       py-2 px-4 border-b border-main-orange"
     >
-      <div className="w-full p-3 flex justify-between items-center md:justify-center md:w-fit md:mx-auto">
+      <div className="navbar-lionz">
         <Link href="/" className="mb-3">
           <motion.div
             initial={{ translateX: "300px" }}
