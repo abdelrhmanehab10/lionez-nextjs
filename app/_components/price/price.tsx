@@ -10,12 +10,12 @@ import {
   PRICE_CARDS,
   VIP_FEATURES,
 } from "@/constant";
+import { cn } from "@/lib/utils";
 
 interface PriceProps {}
 
 const Price: FC<PriceProps> = ({}) => {
   const [isActive, setIsActive] = useState<number>(0);
-  console.log(isActive);
 
   return (
     <div className="bg-[url('/portfolio-left-dec.png')] bg-no-repeat bg-[center_left] relative md:p-5 block">
@@ -51,7 +51,10 @@ const Price: FC<PriceProps> = ({}) => {
           </ul>
         </div>
         <TabsContent
-          className="text-center md:grid grid-cols-3"
+          className={cn(
+            "text-center md:grid",
+            isActive === 2 ? "grid-cols-2" : "grid-cols-3"
+          )}
           value="lionz-tv-vip"
         >
           {PRICE_CARDS[0][isActive].map((card, i) => (
