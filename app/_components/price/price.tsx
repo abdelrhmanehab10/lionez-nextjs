@@ -14,7 +14,9 @@ import {
 interface PriceProps {}
 
 const Price: FC<PriceProps> = ({}) => {
-  const [isActive, setIsActive] = useState<number>(3);
+  const [isActive, setIsActive] = useState<number>(0);
+  console.log(isActive);
+
   return (
     <div className="bg-[url('/portfolio-left-dec.png')] bg-no-repeat bg-[center_left] relative md:p-5 block">
       <Tabs defaultValue="lionz-tv-vip" className="mt-10 w-full text-center">

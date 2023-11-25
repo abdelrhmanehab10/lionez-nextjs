@@ -151,6 +151,11 @@ export const PRICE_BUTTONS = ["جميع دول العالم", "الامارات"
 export const PRICE_CARDS = [
   [
     [
+      { title: "اشتراك سنتين", price: "70" },
+      { title: "اشتراك سنوي", price: "40" },
+      { title: "اشتراك 6 شهور", price: "24" },
+    ],
+    [
       { title: "اشتراك سنتين", price: "250" },
       { title: "اشتراك سنوي", price: "150" },
       { title: "اشتراك 6 شهور", price: "90" },
@@ -164,13 +169,13 @@ export const PRICE_CARDS = [
       { title: "اشتراك سنوي", price: "150" },
       { title: "اشتراك 6 شهور", price: "90" },
     ],
-    [
-      { title: "اشتراك سنتين", price: "70" },
-      { title: "اشتراك سنوي", price: "40" },
-      { title: "اشتراك 6 شهور", price: "24" },
-    ],
   ],
   [
+    [
+      { title: "اشتراك سنوي", price: "25" },
+      { title: "اشتراك 3 شهور", price: "15" },
+      { title: "اشتراك 6 شهور", price: "20" },
+    ],
     [
       { title: "اشتراك سنوي", price: "100" },
       { title: "اشتراك 3 شهور", price: "40" },
@@ -185,11 +190,6 @@ export const PRICE_CARDS = [
       { title: "اشتراك سنوي", price: "100" },
       { title: "اشتراك 3 شهور", price: "40" },
       { title: "اشتراك 6 شهور", price: "60" },
-    ],
-    [
-      { title: "اشتراك سنوي", price: "25" },
-      { title: "اشتراك 3 شهور", price: "15" },
-      { title: "اشتراك 6 شهور", price: "20" },
     ],
   ],
 ];
