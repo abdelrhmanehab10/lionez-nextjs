@@ -11,15 +11,16 @@ import Link from "next/link";
 import { Button } from "@/components/ui/button";
 import { Check } from "lucide-react";
 import { motion } from "framer-motion";
-import { FEATURES } from "@/constant";
+import { VIP_FEATURES } from "@/constant";
 
 interface PriceCardProps {
   title: string;
   price: string;
   currency: string;
+  items: string[];
 }
 
-const PriceCard: FC<PriceCardProps> = ({ currency, price, title }) => {
+const PriceCard: FC<PriceCardProps> = ({ currency, price, title, items }) => {
   return (
     <motion.div
       initial={{ opacity: 0 }}
@@ -54,7 +55,7 @@ const PriceCard: FC<PriceCardProps> = ({ currency, price, title }) => {
         </CardHeader>
         <CardContent>
           <ul>
-            {FEATURES.map((feature, index) => (
+            {items.map((feature, index) => (
               <li
                 className="flex gap-4 items-center flex-row-reverse my-3"
                 key={index}

@@ -3,9 +3,13 @@
 import { FC, useState } from "react";
 import PriceCard from "./price-card";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
-import { cn } from "@/lib/utils";
 import PriceButton from "./price-button";
-import { PRICE_BUTTONS, PRICE_CARDS } from "@/constant";
+import {
+  GOLD_FEATURES,
+  PRICE_BUTTONS,
+  PRICE_CARDS,
+  VIP_FEATURES,
+} from "@/constant";
 
 interface PriceProps {}
 
@@ -53,6 +57,7 @@ const Price: FC<PriceProps> = ({}) => {
               key={i}
               title={card.title}
               price={card.price}
+              items={VIP_FEATURES}
               currency={
                 isActive === 3
                   ? "ريال سعودي"
@@ -74,6 +79,7 @@ const Price: FC<PriceProps> = ({}) => {
               key={i}
               title={card.title}
               price={card.price}
+              items={GOLD_FEATURES}
               currency={
                 isActive === 3
                   ? "ريال سعودي"
