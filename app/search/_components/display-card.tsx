@@ -26,7 +26,11 @@ const DisplayCard: FC<DisplayCardProps> = ({ result }) => {
             className="absolute text-white bg-main-orange
              left-0 top-0 p-[5px] rounded-br text-base"
           >
-            {result.stream_type === "created_live" ? "live" : "radio"}
+            {result.stream_type === "created_live"
+              ? "live"
+              : result.stream_type === ""
+              ? "tv show"
+              : "radio"}
           </div>
           <Image
             src={returnedImage()}
