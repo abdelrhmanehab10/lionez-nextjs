@@ -27,7 +27,12 @@ const Counters: FC<CountersProps> = ({}) => {
           h-full flex justify-center gap-10 md:gap-20 items-center"
         >
           {COUNTERS.map((counter, i) => (
-            <Counter key={i} label={counter.label} icon={counter.icon} />
+            <Counter
+              key={i}
+              label={counter.label}
+              icon={counter.icon}
+              end={counter.end}
+            />
           ))}
         </div>
       </div>

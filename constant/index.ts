@@ -125,14 +125,17 @@ export const COUNTERS = [
   {
     label: "قنوات",
     icon: Satellite,
+    end: 999999,
   },
   {
     label: "افلام",
     icon: Film,
+    end: 30000,
   },
   {
     label: "مسلسلات",
     icon: Tv,
+    end: 10000,
   },
 ];
 
