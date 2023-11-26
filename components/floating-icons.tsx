@@ -34,7 +34,7 @@ const FloatingIcons: FC<FloatingIconsProps> = ({}) => {
         placeholder="جاري الكتابة"
         chatMessage="مرحبا بك في سيرفر عرب ليونز 🤝
         كيف يمكنني مساعدتك ؟"
-        avatar="https://i.imgur.com/xZMBPi9.png"
+        avatar="/logo.png"
       />
     </>
   );
