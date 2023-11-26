@@ -5,6 +5,7 @@ import Navbar from "@/components/navbar";
 import Footer from "@/components/footer";
 import TanstackProvider from "@/components/providers/tanstack-provider";
 import ModalProvider from "@/components/providers/modal-provider";
+import FloatingIcons from "@/components/floating-icons";
 
 const font = Almarai({
   subsets: ["arabic"],
@@ -34,6 +35,7 @@ export default function RootLayout({
           <Navbar />
           {children}
           <Footer />
+          <FloatingIcons />
         </TanstackProvider>
       </body>
     </html>
