@@ -17,6 +17,7 @@ export const metadata: Metadata = {
   title: "الرئسية | سيرفر عرب ليونز",
   description: `سيرفر ليونز تي في أقوي سيرفر لمشاهدة المباريات والمحتوي الترفيهي في الشرق الأوسط, يحتوي علي أكثر من 200 تيرا افلام ومسلسلات وقنوات ممتازة بجودات مختلفة
   نعمل في ليونز تي في علي توفير أفضل تجربة للمستخدم, فنقوم بتقسيم...`,
+  verification: { google: "4Rg_RhlcihMmymfth8iOan2bjPhx6NMeHXp4vN69i9c" },
   icons: {
     icon: "/logo.png",
   },

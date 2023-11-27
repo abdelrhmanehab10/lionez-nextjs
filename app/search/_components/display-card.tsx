@@ -23,7 +23,7 @@ const DisplayCard: FC<DisplayCardProps> = ({ result }) => {
       <CardContent>
         <div className="relative">
           <div
-            className="absolute text-white bg-main-orange
+            className="rounded absolute text-white bg-main-orange
              left-0 top-0 p-[5px] rounded-br text-base"
           >
             {!result.stream_type ? "tv show" : null}

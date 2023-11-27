@@ -9,7 +9,7 @@ interface FloatingIconsProps {}
 
 const FloatingIcons: FC<FloatingIconsProps> = ({}) => {
   return (
-    <>
+    <div className="relative">
       <Link
         className="w-14 h-14 fixed right-8 bottom-28 z-50"
         href="https://t.me/Lionzsales"
@@ -36,7 +36,7 @@ const FloatingIcons: FC<FloatingIconsProps> = ({}) => {
         كيف يمكنني مساعدتك ؟"
         avatar="/logo.png"
       />
-    </>
+    </div>
   );
 };
 
