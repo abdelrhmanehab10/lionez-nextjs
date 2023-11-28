@@ -23,14 +23,14 @@ const DisplayCard: FC<DisplayCardProps> = ({ result }) => {
       <CardContent>
         <div className="relative">
           <div
-            className="absolute text-white bg-main-orange
+            className="rounded absolute text-white bg-main-orange
              left-0 top-0 p-[5px] rounded-br text-base"
           >
-            {result.stream_type === "created_live"
-              ? "live"
-              : result.stream_type === ""
-              ? "tv show"
-              : "radio"}
+            {!result.stream_type ? "tv show" : null}
+            {result.stream_type === "movie" ? result.stream_type : null}
+            {result.stream_type === "radio-streams" ? "radio" : null}
+            {result.stream_type === "created_live" ? "live" : null}
+            {result.stream_type === "live" ? result.stream_type : null}
           </div>
           <Image
             src={returnedImage()}

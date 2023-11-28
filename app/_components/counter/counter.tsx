@@ -20,7 +20,7 @@ const Counter: FC<CounterProps> = ({ label, end, icon: Icon }) => {
       viewport={{ once: true }}
     >
       <div
-        className="p-5 rounded-full border-14 border-[hsla(0,0%,100%,.586)] w-30 h-30 flex 
+        className="p-5 rounded-full border-[15px] border-[hsla(0,0%,100%,.586)] w-30 h-30 flex 
         flex-col justify-center items-center"
       >
         <Icon className="mx-auto w-16 h-16" />
