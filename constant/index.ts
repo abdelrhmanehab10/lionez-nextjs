@@ -63,24 +63,20 @@ export const APPS_DOWNLOAD_LINKS = [
   [
     {
       title: "Android 4K",
-      link: "https://bit.ly/4k010101",
+      link: "http://tvshof.pro/4K",
       code: "146077",
     },
     {
-      title: "Android V4",
-      link: "https://play.google.com/store/apps/details?id=com.lionzshow.lionzshowiptvbox",
-    },
-    {
       title: "Android V3",
-      link: "https://bit.ly/lionzv3n",
+      link: "http://tvshof.pro/v3",
     },
     {
       title: "Lionz V2",
-      link: "https://bit.ly/lionz222",
+      link: "http://tvshof.pro/v2",
     },
     {
       title: "Astra TV",
-      link: "https://play.google.com/store/apps/details?id=com.astraiptv.astraiptviptvbox",
+      link: "https://tvshof.pro/oz55m",
     },
   ],
   [
@@ -102,19 +98,19 @@ export const APPS_DOWNLOAD_LINKS = [
   [
     {
       title: "LIONZ TV V2",
-      link: "https://lionz.tv/app/lionzSetup.3.0.2.exe",
+      link: "https://tvshof.pro/1ljd8",
     },
     {
       title: "LIONZ TV 3.0",
-      link: "https://lionz.tv/app/LIONZ-TV.exe",
+      link: "https://tvshof.pro/qgto1",
     },
     {
       title: "IPTV Smarters Pro",
-      link: "https://lionz.tv/app/IPTVSmartersPro-Setup-1.1.1.exe",
+      link: "https://tvshof.pro/d7gs2",
     },
     {
       title: "Sfvip 1.2.7.5",
-      link: "https://lionz.tv/app/SFVIP-Player-x64.1.2.7.5.rar",
+      link: "https://tvshof.pro/j876w",
     },
   ],
 ];
