@@ -49,7 +49,7 @@ const PriceCard: FC<PriceCardProps> = ({ currency, price, title, items }) => {
           >
             <CardDescription className="bg-main-orange -mr-6 text-white w-2/3 text-xl rounded-l-2xl px-4 py-6 flex flex-col">
               <span className="font-bold text-2xl block">{price}</span>{" "}
-              {currency}
+              <Link href={href}>{currency}</Link>
             </CardDescription>
           </motion.div>
         </CardHeader>
