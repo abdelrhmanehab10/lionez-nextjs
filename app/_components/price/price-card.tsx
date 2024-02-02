@@ -16,11 +16,10 @@ import { VIP_FEATURES } from "@/constant";
 interface PriceCardProps {
   title: string;
   price: string;
-  currency: string;
   items: string[];
 }
 
-const PriceCard: FC<PriceCardProps> = ({ currency, price, title, items }) => {
+const PriceCard: FC<PriceCardProps> = ({ price, title, items }) => {
   return (
     <motion.div
       initial={{ opacity: 0 }}
@@ -48,7 +47,7 @@ const PriceCard: FC<PriceCardProps> = ({ currency, price, title, items }) => {
             className="flex justify-end"
           >
             <CardDescription className="bg-main-orange -mr-6 text-white w-2/3 text-xl rounded-l-2xl px-4 py-6 flex flex-col">
-              <span className="font-bold text-2xl block">{price}</span>{" "}
+              <span className="font-bold text-2xl block"><Link href={"/qrce.de/lioneztv"}>{price}</Link></span>{" "}
               <Link href={href}>{currency}</Link>
             </CardDescription>
           </motion.div>
