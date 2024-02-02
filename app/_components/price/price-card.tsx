@@ -47,8 +47,7 @@ const PriceCard: FC<PriceCardProps> = ({ price, title, items }) => {
             className="flex justify-end"
           >
             <CardDescription className="bg-main-orange -mr-6 text-white w-2/3 text-xl rounded-l-2xl px-4 py-6 flex flex-col">
-              <span className="font-bold text-2xl block"><Link href={"/qrce.de/lioneztv"}>{price}</Link></span>{" "}
-              <Link href={href}>{currency}</Link>
+              <span className="font-bold text-2xl block"><Link href={"/qrce.de/lioneztv"}>{price}</Link></span>
             </CardDescription>
           </motion.div>
         </CardHeader>
