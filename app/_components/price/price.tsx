@@ -63,16 +63,6 @@ const Price: FC<PriceProps> = ({}) => {
               title={card.title}
               price={card.price}
               items={VIP_FEATURES}
-              currency={
-                isActive === 3
-                  ? "بالمبيعات"
-                  : isActive === 2
-                  ? "بالمبيعات"
-                  : isActive === 1
-                  ? "بالمبيعات"
-                  : "بالمبيعات"
-              }
-              href={""}
             />
           ))}
         </TabsContent>
