@@ -72,6 +72,7 @@ const Price: FC<PriceProps> = ({}) => {
                   ? "بالمبيعات"
                   : "بالمبيعات"
               }
+              href={""}
             />
           ))}
         </TabsContent>
