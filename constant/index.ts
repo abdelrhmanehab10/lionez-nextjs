@@ -150,7 +150,10 @@ export const PRICE_BUTTONS = ["جميع دول العالم", "الامارات"
 export const PRICE_CARDS = [
   [
     [
-      { title: "اشتراك 6 شهور", price: "تواصل مع" },
+      { title: "اشتراك 6 شهور", price: "تواصل مع",
+        link: "https://tvshof.pro/d7gs2",
+      },
+      
       { title: "اشتراك سنتين", price: "تواصل مع" },
       { title: "اشتراك سنوي", price: "تواصل مع" },
     ],
