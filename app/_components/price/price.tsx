@@ -65,11 +65,11 @@ const Price: FC<PriceProps> = ({}) => {
               items={VIP_FEATURES}
               currency={
                 isActive === 3
-                  ? "ريال سعودي"
+                  ? "بالمبيعات"
                   : isActive === 2
-                  ? "جنيه مصري"
+                  ? "بالمبيعات"
                   : isActive === 1
-                  ? "درهم اماراتي"
+                  ? "بالمبيعات"
                   : "بالمبيعات"
               }
             />
@@ -87,11 +87,11 @@ const Price: FC<PriceProps> = ({}) => {
               items={GOLD_FEATURES}
               currency={
                 isActive === 3
-                  ? "ريال سعودي"
+                  ? "بالمبيعات"
                   : isActive === 2
-                  ? "جنيه مصري"
+                  ? "بالمبيعات"
                   : isActive === 1
-                  ? "درهم اماراتي"
+                  ? "بالمبيعات"
                   : "بالمبيعات"
               }
             />
