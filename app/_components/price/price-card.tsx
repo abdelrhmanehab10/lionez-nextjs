@@ -66,7 +66,7 @@ const PriceCard: FC<PriceCardProps> = ({ price, title, items }) => {
         </CardContent>
         <CardFooter>
           <Button className="mx-auto bg-main-blue hover:bg-main-blue/70">
-            <Link target="_blank" href="https://qrco.de/lionztv">
+            <Link href="https://qrco.de/lionztv">
               اشترك الان
             </Link>
           </Button>
