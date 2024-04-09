@@ -1,4 +1,4 @@
-// File: E:\production\lionez-nextjs\app\price\page.tsx
+// File: G:\Work\Web\lionz-next\app\price\page.tsx
 import * as entry from '../../../../app/price/page.js'
 import type { ResolvingMetadata, ResolvingViewport } from 'next/dist/lib/metadata/types/metadata-interface.js'
 
