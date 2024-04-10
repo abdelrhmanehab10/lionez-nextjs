@@ -7,6 +7,7 @@ import Application from "@/app/_components/application/application";
 import MCQ from "@/app/_components/mcq/mcq";
 import { Metadata } from "next";
 
+
 export const metadata: Metadata = {
   title: "الرئيسية | سيرفر عرب ليونز",
   description: `سيرفر ليونز تي في أقوي سيرفر لمشاهدة المباريات والمحتوي الترفيهي في الشرق الأوسط, يحتوي علي أكثر من 200 تيرا افلام ومسلسلات وقنوات ممتازة بجودات مختلفة

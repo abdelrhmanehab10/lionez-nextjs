@@ -12,11 +12,10 @@
       "static/css/app/layout.css",
       "static/chunks/app/layout.js"
     ],
-    "/price/page": [
+    "/search/page": [
       "static/chunks/webpack.js",
       "static/chunks/main-app.js",
-      "static/css/app/price/page.css",
-      "static/chunks/app/price/page.js"
+      "static/chunks/app/search/page.js"
     ]
   }
 }
