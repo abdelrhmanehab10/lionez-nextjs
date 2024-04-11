@@ -565,8 +565,8 @@ video {
 .bottom-0 {
   bottom: 0px;
 }
-.bottom-28 {
-  bottom: 7rem;
+.bottom-10 {
+  bottom: 2.5rem;
 }
 .left-0 {
   left: 0px;
@@ -600,12 +600,6 @@ video {
 }
 .top-\[50\%\] {
   top: 50%;
-}
-.bottom-5 {
-  bottom: 1.25rem;
-}
-.bottom-10 {
-  bottom: 2.5rem;
 }
 .z-10 {
   z-index: 10;
