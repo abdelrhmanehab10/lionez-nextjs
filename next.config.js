@@ -8,4 +8,17 @@ const nextConfig = {
   },
 };
 
+module.exports = {
+  async redirects() {
+    return [
+      {
+        source: '/blocked',
+        destination: '/',
+        permanent: true,
+      },
+    ];
+  },
+};
+
+
 module.exports = nextConfig;

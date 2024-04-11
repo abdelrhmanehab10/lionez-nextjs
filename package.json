@@ -18,6 +18,7 @@
     "axios": "^1.6.2",
     "class-variance-authority": "^0.7.0",
     "clsx": "^2.0.0",
+    "cookie": "^0.6.0",
     "framer-motion": "^10.16.5",
     "geoip-lite": "^1.4.10",
     "lucide-react": "^0.292.0",
