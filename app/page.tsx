@@ -5,6 +5,7 @@ import Counters from "@/app/_components/counter/counters";
 import Price from "@/app/_components/price/price";
 import Application from "@/app/_components/application/application";
 import MCQ from "@/app/_components/mcq/mcq";
+
 import { Metadata } from "next";
 
 
