@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:ror="http://rorweb.com/0.1/" >
+<channel>
+  <title>ROR Sitemap for https://lionz.tv/</title>
+  <link>https://lionz.tv/</link>
+
+<item>
+     <link>https://lionz.tv/</link>
+     <title>الرئيسية | سيرفر عرب ليونز</title>
+     <description>سيرفر ليونز تي في أقوي سيرفر لمشاهدة المباريات والمحتوي الترفيهي في الشرق الأوسط, يحتوي علي أكثر من 200 تيرا افلام ومسلسلات وقنوات ممتازة بجودات مختلفة
+  نعمل في ليونز تي في علي توفير أفضل تجربة للمستخدم, فنقوم بتقسيم...</description>
+     <ror:updatePeriod>always</ror:updatePeriod>
+     <ror:sortOrder>0</ror:sortOrder>
+     <ror:resourceOf>sitemap</ror:resourceOf>
+</item>
+<item>
+     <link>https://lionz.tv/price</link>
+     <title>اشتراك الان | سيرفر عرب ليونز</title>
+     <description>اشترك الان في سيرفر عرب ليونز وستمتع بمشاهدة كل جديد</description>
+     <ror:updatePeriod>always</ror:updatePeriod>
+     <ror:sortOrder>1</ror:sortOrder>
+     <ror:resourceOf>sitemap</ror:resourceOf>
+</item>
+<item>
+     <link>https://lionz.tv/application</link>
+     <title>تطبيقاتنا | سيرفر عرب ليونز</title>
+     <description>.يمكنك تحميل التطبيقات الخاصة بسيرفر عرب ليونز والاستمتاع بمزاية بلا حدود</description>
+     <ror:updatePeriod>always</ror:updatePeriod>
+     <ror:sortOrder>1</ror:sortOrder>
+     <ror:resourceOf>sitemap</ror:resourceOf>
+</item>
+<item>
+     <link>https://lionz.tv/technical-support</link>
+     <title>الدعم | سيرفر عرب ليونز</title>
+     <description>الدعم الفني لسيرفر عرب ليونز</description>
+     <ror:updatePeriod>always</ror:updatePeriod>
+     <ror:sortOrder>1</ror:sortOrder>
+     <ror:resourceOf>sitemap</ror:resourceOf>
+</item>
+<item>
+     <link>https://lionz.tv/search</link>
+     <title>البحث | سيرفر عرب ليونز</title>
+     <description>البحث في سيرفر عرب ليونز</description>
+     <ror:updatePeriod>always</ror:updatePeriod>
+     <ror:sortOrder>1</ror:sortOrder>
+     <ror:resourceOf>sitemap</ror:resourceOf>
+</item>
+<item>
+     <link>https://lionz.tv/review</link>
+     <title>الاراء | سيرفر عرب ليونز</title>
+     <description>اراء العملاء  في سيرفر عرب ليونز</description>
+     <ror:updatePeriod>always</ror:updatePeriod>
+     <ror:sortOrder>1</ror:sortOrder>
+     <ror:resourceOf>sitemap</ror:resourceOf>
+</item>
+</channel>
+</rss>
+  
