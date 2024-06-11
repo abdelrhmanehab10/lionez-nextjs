@@ -29,6 +29,7 @@
     "react-dom": "^18",
     "react-floating-whatsapp": "^5.0.8",
     "react-query": "^3.39.3",
+    "react-whatsapp-widget": "^2.2.0",
     "string-similarity": "^4.0.4",
     "swiper": "^11.0.4",
     "tailwind-merge": "^2.0.0",

@@ -2,8 +2,11 @@
 import { FC } from "react";
 import Link from "next/link";
 import Image from "next/image";
-
+import "./icons.css"
 import { FloatingWhatsApp } from "react-floating-whatsapp";
+
+
+
 
 interface FloatingIconsProps {}
 
@@ -27,15 +30,16 @@ const FloatingIcons: FC<FloatingIconsProps> = ({}) => {
         phoneNumber="201558890701"
         accountName="LionzTv"
         allowEsc
-        allowClickAway
         notification
         notificationSound
         statusMessage="يتم الرد خلال دقائق"
         placeholder="جاري الكتابة"
         chatMessage="مرحبا بك في سيرفر عرب ليونز 🤝
         كيف يمكنني مساعدتك ؟"
+        
         avatar="/logo.png"
       />
+
     </div>
   );
 };

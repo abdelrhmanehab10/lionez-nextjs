@@ -35,8 +35,8 @@ export default function RootLayout({
           <ModalProvider />
           <Navbar />
           {children}
+        <FloatingIcons />
           <Footer />
-          <FloatingIcons />
         </TanstackProvider>
       </body>
     </html>

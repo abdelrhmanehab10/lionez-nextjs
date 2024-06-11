@@ -5,6 +5,7 @@ import { motion } from "framer-motion";
 import Image from "next/image";
 import SupportLink from "./support-link";
 import { SUPPORT_LINKS } from "@/constant";
+import Link from "next/link";
 
 interface SupportProps {}
 
@@ -38,6 +39,7 @@ const Support: FC<SupportProps> = ({}) => {
               والأفلام والبرامج والقنوات الرياضية والوثائقية و الإخبارية من جميع
               أنحاء العالم و على جميع الأجهزة الخاصة بك.
             </motion.p>
+            
             <ul className="list-none mt-[50px]">
               {SUPPORT_LINKS.map((support, i) => (
                 <SupportLink
@@ -47,6 +49,11 @@ const Support: FC<SupportProps> = ({}) => {
                 />
               ))}
             </ul>
+            <button className="text-white bg-main-blue my-5 transition shadow-[-5px_6px_9px_0px_#000000a3] font-bold hover:bg-main-orange px-4 py-2 rounded flex justify-start ms-8">
+            <Link href="https://qrco.de/lionztv" target="_blank">
+              اشترك الأن
+            </Link>
+          </button>
           </div>
           <motion.div
             initial={{ translateX: "-500px", opacity: 0 }}
@@ -64,6 +71,7 @@ const Support: FC<SupportProps> = ({}) => {
             />
           </motion.div>
         </div>
+      
       </div>
     </div>
   );

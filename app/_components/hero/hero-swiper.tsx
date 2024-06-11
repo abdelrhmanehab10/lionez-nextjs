@@ -75,7 +75,7 @@ const HeroSwiper: FC<HeroSwiperProps> = ({
             {title}
           </h1>
           <p className="text-[20px] mt-5 md:text-[25px]">{description}</p>
-          <button className="text-white bg-main-blue my-5 transition shadow-[-5px_6px_9px_0px_#000000a3] font-bold hover:bg-main-orange px-2 py-1 ms-8 md:ms-0 rounded ">
+          <button className="text-white bg-main-blue my-5 transition shadow-[-5px_6px_9px_0px_#000000a3] font-bold hover:bg-main-orange px-4 py-2 ms-8 md:ms-0 rounded ">
             <Link href="https://qrco.de/lionztv" target="_blank">
               اشترك الأن
             </Link>

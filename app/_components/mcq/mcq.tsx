@@ -10,6 +10,7 @@ import {
   AccordionTrigger,
 } from "@/components/ui/accordion";
 import MCQAccordionItem from "./mcq-accordion-item";
+import Link from "next/link";
 
 const ACCORDION_ITEMS = [
   {
@@ -92,8 +93,8 @@ const MCQ: FC<MCQProps> = ({}) => {
       <h3 className="text-white/50 text-sm">
         في حال وجود استفسار يتعلق بالخدمه او الاشتراك لا تتردد في الاتصال بنا
       </h3>
-      <div className="py-5 grid grid-cols-1 md:grid-cols-2 items-center">
-        <Accordion className="w-2/3 mx-auto " type="single" collapsible>
+      <div className="py-5 grid grid-cols-1 md:grid-cols-2 items-center ">
+        <Accordion className="w-2/3 mx-auto  " type="single" collapsible>
           {ACCORDION_ITEMS.map((accordion, i) => (
             <MCQAccordionItem
               key={i}
@@ -103,7 +104,13 @@ const MCQ: FC<MCQProps> = ({}) => {
               value={i}
             />
           ))}
+          <button className="text-white bg-main-blue transition shadow-[-5px_6px_9px_0px_#000000a3] font-bold hover:bg-main-orange px-2 py-2 px-6  rounded mt-6 flex justify-start text-xl	">
+            <Link href="https://qrco.de/lionztv" target="_blank">
+              للتواصل مع الدعم
+            </Link>
+          </button>
         </Accordion>
+        
         <motion.div
           initial={{ opacity: 0, translateX: "-300px" }}
           whileInView={{ opacity: 1, translateX: 0 }}
@@ -117,7 +124,9 @@ const MCQ: FC<MCQProps> = ({}) => {
             height={1000}
           />
         </motion.div>
+        
       </div>
+      
     </div>
   );
 };
