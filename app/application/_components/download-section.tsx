@@ -7,13 +7,12 @@ import { APPS_DOWNLOAD_LINKS } from "@/constant";
 interface ItemType {
   link: string;
   title: string;
-  code?: number;
 }
 
 interface DownloadSectionProps {
   items: (typeof APPS_DOWNLOAD_LINKS)[number];
   system: string;
-  code: number;
+  code?: number;
 }
 
 const DownloadSection: FC<DownloadSectionProps> = ({ items, system, code }) => {
