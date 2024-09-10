@@ -64,7 +64,6 @@ export const APPS_DOWNLOAD_LINKS = [
     {
       title: "Android 4K",
       link: "http://tvshof.pro/4K",
-      code: "146077",
     },
     {
       title: "Android V3",
@@ -81,12 +80,12 @@ export const APPS_DOWNLOAD_LINKS = [
   ],
   [
     {
-      title: "000 Player 4K",
+      title: "000 player",
       link: "https://apple.co/3ReEZAO",
-      code: 217,
+      code: "رقم السيرفر 217",
     },
     {
-      title: "Globle Player",
+      title: "S Player Pro",
       link: "https://apple.co/3uZbKJ1",
     },
     {

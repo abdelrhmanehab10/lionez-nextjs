@@ -31,6 +31,9 @@ const Search: FC<SearchProps> = ({}) => {
     setSearchResult,
     setSearchError,
   };
+
+  console.log({searchResult});
+  
   return (
     <div className="mt-5 pt-5 h-full">
       <InputSearch {...setters} />
@@ -40,7 +43,7 @@ const Search: FC<SearchProps> = ({}) => {
       </div>
       {searchResult?.length > 0 ? (
         <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-6 gap-2 mt-4">
-          {searchResult.map((result, idx) => (
+          {searchResult?.map((result, idx) => (
             <DisplayCard key={idx} result={result} />
           ))}
         </div>

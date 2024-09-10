@@ -13,9 +13,10 @@ interface ItemType {
 interface DownloadSectionProps {
   items: (typeof APPS_DOWNLOAD_LINKS)[number];
   system: string;
+  code: number;
 }
 
-const DownloadSection: FC<DownloadSectionProps> = ({ items, system }) => {
+const DownloadSection: FC<DownloadSectionProps> = ({ items, system, code }) => {
   return (
     <div className="mt-10">
       <div className="p-3">
@@ -33,7 +34,7 @@ const DownloadSection: FC<DownloadSectionProps> = ({ items, system }) => {
             className="text-lg font-semibold text-center bg-gradient-to-l 
             from-main-gradientRight to-main-gradientLeft mt-3 w-1/3 mx-auto p-1 rounded"
           >
-            {download.title}
+            {download.title} <br /> <span className="text-base">{download.code}</span>
             <Download className="mx-auto" />
           </Link>
         ))}
