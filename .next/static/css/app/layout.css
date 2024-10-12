@@ -663,6 +663,12 @@ video {
 .mb-4 {
   margin-bottom: 1rem;
 }
+.mb-6 {
+  margin-bottom: 1.5rem;
+}
+.mb-8 {
+  margin-bottom: 2rem;
+}
 .me-2 {
   margin-inline-end: 0.5rem;
 }
@@ -704,6 +710,9 @@ video {
 }
 .mt-\[50px\] {
   margin-top: 50px;
+}
+.mr-10 {
+  margin-right: 2.5rem;
 }
 .block {
   display: block;
@@ -1924,6 +1933,10 @@ body {
     margin-top: 2.5rem;
   }
 
+  .md\:mb-0 {
+    margin-bottom: 0px;
+  }
+
   .md\:block {
     display: block;
   }
@@ -1986,6 +1999,18 @@ body {
 
   .md\:ps-\[70px\] {
     padding-inline-start: 70px;
+  }
+
+  .md\:pl-8 {
+    padding-left: 2rem;
+  }
+
+  .md\:text-left {
+    text-align: left;
+  }
+
+  .md\:text-right {
+    text-align: right;
   }
 
   .md\:text-5xl {

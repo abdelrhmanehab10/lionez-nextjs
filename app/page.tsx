@@ -7,6 +7,7 @@ import Application from "@/app/_components/application/application";
 import MCQ from "@/app/_components/mcq/mcq";
 
 import { Metadata } from "next";
+import LionzTvBoxPage from "./lionz-tv-box/page";
 
 
 
@@ -22,6 +23,7 @@ export default function Home() {
     <>
       <Header />
       <Channels />
+      <LionzTvBoxPage />
       <Support />
       <Counters />
       <Price />

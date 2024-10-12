@@ -1,0 +1,11 @@
+.title {
+    margin-top: 80px;
+    color: rgb(254 96 0);
+}
+
+
+.bg-tvbox {
+    background-image: url('/tvbox/5555.png');
+    background-size: cover;
+}
+

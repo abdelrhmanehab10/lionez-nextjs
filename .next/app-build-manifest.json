@@ -12,17 +12,33 @@
       "static/css/app/layout.css",
       "static/chunks/app/layout.js"
     ],
+    "/price/page": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/css/app/price/page.css",
+      "static/chunks/app/price/page.js"
+    ],
     "/application/page": [
       "static/chunks/webpack.js",
       "static/chunks/main-app.js",
       "static/css/app/application/page.css",
       "static/chunks/app/application/page.js"
     ],
-    "/price/page": [
+    "/search/page": [
       "static/chunks/webpack.js",
       "static/chunks/main-app.js",
-      "static/css/app/price/page.css",
-      "static/chunks/app/price/page.js"
+      "static/chunks/app/search/page.js"
+    ],
+    "/lionz-tv-box/page": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/css/app/lionz-tv-box/page.css",
+      "static/chunks/app/lionz-tv-box/page.js"
+    ],
+    "/review/page": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/chunks/app/review/page.js"
     ]
   }
 }
