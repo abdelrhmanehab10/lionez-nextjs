@@ -4,7 +4,7 @@ import SupportLink from "../_components/support/support-link";
 import { tv_box } from "@/constant";
 import "./page.css"
 import Link from "next/link";
-import tvBoxImg from "../../public/tvbox/21.png";
+import tvBoxImg from "@/public/tvbox/21.png";
 
 const LionzTvBoxPage = () => {
   return (
