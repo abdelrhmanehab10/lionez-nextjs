@@ -1,7 +1,4 @@
 {
-  "/page": "app/page.js",
-  "/search/page": "app/search/page.js",
   "/lionz-tv-box/page": "app/lionz-tv-box/page.js",
-  "/price/page": "app/price/page.js",
   "/review/page": "app/review/page.js"
 }

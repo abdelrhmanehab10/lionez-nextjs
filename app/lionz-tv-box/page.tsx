@@ -4,6 +4,7 @@ import SupportLink from "../_components/support/support-link";
 import { tv_box } from "@/constant";
 import "./page.css"
 import Link from "next/link";
+import tvBoxImg from "../../public/tvbox/21.png";
 
 const LionzTvBoxPage = () => {
   return (
@@ -33,7 +34,7 @@ const LionzTvBoxPage = () => {
         </div>
         <div className="md:w-1/2 mb-4 md:mb-0 bg-tvbox">
           <Image
-            src="/tvbox/21.png"
+            src={tvBoxImg}
             alt="Lionz Tv Box"
             width={500}
             height={500}
